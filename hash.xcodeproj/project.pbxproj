@@ -11,7 +11,20 @@
 		F926D0C817CCEC13007F5FAF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F926D0C717CCEC13007F5FAF /* main.m */; };
 		F926D0CC17CCEC13007F5FAF /* hash.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = F926D0CB17CCEC13007F5FAF /* hash.1 */; };
 		F926D0D317CCEC31007F5FAF /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F926D0D217CCEC31007F5FAF /* Cocoa.framework */; };
+		F926D0E017CD23A7007F5FAF /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F926D0DF17CD23A7007F5FAF /* XCTest.framework */; };
+		F926D0E617CD23A7007F5FAF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F926D0E417CD23A7007F5FAF /* InfoPlist.strings */; };
+		F926D0E817CD23A7007F5FAF /* hasher_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = F926D0E717CD23A7007F5FAF /* hasher_Tests.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F926D0EA17CD23A7007F5FAF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F926D0B917CCEC13007F5FAF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F926D0C017CCEC13007F5FAF;
+			remoteInfo = hasher;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		F926D0BF17CCEC13007F5FAF /* CopyFiles */ = {
@@ -33,6 +46,12 @@
 		F926D0CA17CCEC13007F5FAF /* hash-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "hash-Prefix.pch"; sourceTree = "<group>"; };
 		F926D0CB17CCEC13007F5FAF /* hash.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = hash.1; sourceTree = "<group>"; };
 		F926D0D217CCEC31007F5FAF /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		F926D0DE17CD23A7007F5FAF /* hasher Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "hasher Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F926D0DF17CD23A7007F5FAF /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		F926D0E317CD23A7007F5FAF /* hasher Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "hasher Tests-Info.plist"; sourceTree = "<group>"; };
+		F926D0E517CD23A7007F5FAF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F926D0E717CD23A7007F5FAF /* hasher_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = hasher_Tests.m; sourceTree = "<group>"; };
+		F926D0E917CD23A7007F5FAF /* hasher Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "hasher Tests-Prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +64,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F926D0DB17CD23A7007F5FAF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F926D0E017CD23A7007F5FAF /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -52,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				F926D0C617CCEC13007F5FAF /* hash */,
+				F926D0E117CD23A7007F5FAF /* hasher Tests */,
 				F926D0C317CCEC13007F5FAF /* Frameworks */,
 				F926D0C217CCEC13007F5FAF /* Products */,
 			);
@@ -61,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				F926D0C117CCEC13007F5FAF /* hash */,
+				F926D0DE17CD23A7007F5FAF /* hasher Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,6 +99,7 @@
 			children = (
 				F926D0D217CCEC31007F5FAF /* Cocoa.framework */,
 				F926D0C417CCEC13007F5FAF /* Foundation.framework */,
+				F926D0DF17CD23A7007F5FAF /* XCTest.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -88,6 +118,25 @@
 			isa = PBXGroup;
 			children = (
 				F926D0CA17CCEC13007F5FAF /* hash-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F926D0E117CD23A7007F5FAF /* hasher Tests */ = {
+			isa = PBXGroup;
+			children = (
+				F926D0E717CD23A7007F5FAF /* hasher_Tests.m */,
+				F926D0E217CD23A7007F5FAF /* Supporting Files */,
+			);
+			path = "hasher Tests";
+			sourceTree = "<group>";
+		};
+		F926D0E217CD23A7007F5FAF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F926D0E317CD23A7007F5FAF /* hasher Tests-Info.plist */,
+				F926D0E417CD23A7007F5FAF /* InfoPlist.strings */,
+				F926D0E917CD23A7007F5FAF /* hasher Tests-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -112,6 +161,24 @@
 			productReference = F926D0C117CCEC13007F5FAF /* hash */;
 			productType = "com.apple.product-type.tool";
 		};
+		F926D0DD17CD23A7007F5FAF /* hasher Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F926D0EC17CD23A7007F5FAF /* Build configuration list for PBXNativeTarget "hasher Tests" */;
+			buildPhases = (
+				F926D0DA17CD23A7007F5FAF /* Sources */,
+				F926D0DB17CD23A7007F5FAF /* Frameworks */,
+				F926D0DC17CD23A7007F5FAF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F926D0EB17CD23A7007F5FAF /* PBXTargetDependency */,
+			);
+			name = "hasher Tests";
+			productName = "hasher Tests";
+			productReference = F926D0DE17CD23A7007F5FAF /* hasher Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -120,6 +187,11 @@
 			attributes = {
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = Cloud.com;
+				TargetAttributes = {
+					F926D0DD17CD23A7007F5FAF = {
+						TestTargetID = F926D0C017CCEC13007F5FAF;
+					};
+				};
 			};
 			buildConfigurationList = F926D0BC17CCEC13007F5FAF /* Build configuration list for PBXProject "hash" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -134,9 +206,21 @@
 			projectRoot = "";
 			targets = (
 				F926D0C017CCEC13007F5FAF /* hasher */,
+				F926D0DD17CD23A7007F5FAF /* hasher Tests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F926D0DC17CD23A7007F5FAF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F926D0E617CD23A7007F5FAF /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F926D0BD17CCEC13007F5FAF /* Sources */ = {
@@ -147,7 +231,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F926D0DA17CD23A7007F5FAF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F926D0E817CD23A7007F5FAF /* hasher_Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F926D0EB17CD23A7007F5FAF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F926D0C017CCEC13007F5FAF /* hasher */;
+			targetProxy = F926D0EA17CD23A7007F5FAF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F926D0E417CD23A7007F5FAF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F926D0E517CD23A7007F5FAF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		F926D0CD17CCEC13007F5FAF /* Debug */ = {
@@ -238,6 +349,40 @@
 			};
 			name = Release;
 		};
+		F926D0ED17CD23A7007F5FAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "hasher Tests/hasher Tests-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "hasher Tests/hasher Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		F926D0EE17CD23A7007F5FAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "hasher Tests/hasher Tests-Prefix.pch";
+				INFOPLIST_FILE = "hasher Tests/hasher Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -255,6 +400,14 @@
 			buildConfigurations = (
 				F926D0D017CCEC13007F5FAF /* Debug */,
 				F926D0D117CCEC13007F5FAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F926D0EC17CD23A7007F5FAF /* Build configuration list for PBXNativeTarget "hasher Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F926D0ED17CD23A7007F5FAF /* Debug */,
+				F926D0EE17CD23A7007F5FAF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

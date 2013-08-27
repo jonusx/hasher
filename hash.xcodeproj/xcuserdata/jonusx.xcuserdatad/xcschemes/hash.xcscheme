@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "F926D0C017CCEC13007F5FAF"
-               BuildableName = "hash"
+               BuildableName = "hasher"
                BlueprintName = "hasher"
                ReferencedContainer = "container:hash.xcodeproj">
             </BuildableReference>
@@ -28,12 +28,22 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "F926D0DD17CD23A7007F5FAF"
+               BuildableName = "hasher Tests.xctest"
+               BlueprintName = "hasher Tests"
+               ReferencedContainer = "container:hash.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F926D0C017CCEC13007F5FAF"
-            BuildableName = "hash"
+            BuildableName = "hasher"
             BlueprintName = "hasher"
             ReferencedContainer = "container:hash.xcodeproj">
          </BuildableReference>
@@ -52,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F926D0C017CCEC13007F5FAF"
-            BuildableName = "hash"
+            BuildableName = "hasher"
             BlueprintName = "hasher"
             ReferencedContainer = "container:hash.xcodeproj">
          </BuildableReference>
@@ -70,7 +80,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F926D0C017CCEC13007F5FAF"
-            BuildableName = "hash"
+            BuildableName = "hasher"
             BlueprintName = "hasher"
             ReferencedContainer = "container:hash.xcodeproj">
          </BuildableReference>
